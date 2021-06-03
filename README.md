@@ -1,8 +1,13 @@
-AndroidTrivia - starter code
+Kotlin - Android Trivia app
 ============================
 
-Starter code for Android Kotlin Fundamentals codelab 3.1: Create and add a
-fragment.
+A game in which the user answers three trivia questions about Android coding 👨‍💻
+
+Course :
+- [Android Kotlin Fundamentals codelabs 3.1: Create and add a
+fragment](https://developer.android.com/codelabs/kotlin-android-training-create-and-add-fragment)
+
+🚧 Currently under the development
 
 Introduction
 ------------
