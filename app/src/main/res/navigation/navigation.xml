@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.android.navigation.GameFragment"
-        android:label="fragment_title"
+        android:label="GameFragment"
         tools:layout="@layout/fragment_title" />
 </navigation>
