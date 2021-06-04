@@ -9,5 +9,5 @@
         android:id="@+id/gameFragment"
         android:name="com.example.android.navigation.GameFragment"
         android:label="GameFragment"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_game" />
 </navigation>
