@@ -30,6 +30,9 @@ class TitleFragment : Fragment() {
             false           // false for the attachToParent value.
         )
 
+        // Add a click handler to the Play button
+        binding.playButton.setOnClickListener {  }
+
         return binding.root
     }
 }
