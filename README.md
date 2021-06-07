@@ -7,7 +7,9 @@ Course :
 - [Android Kotlin Fundamentals codelabs 3.1: Create and add a
 fragment](https://developer.android.com/codelabs/kotlin-android-training-create-and-add-fragment)
 
-🚧 Currently under the development
+<div align="center">
+  <img src="https://s6.gifyu.com/images/e.png" alt="e.png" border="0" width="350" />
+</div>
 
 Introduction
 ------------
