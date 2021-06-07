@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
 
         // To link the navigation controller to the app bar
         NavigationUI.setupActionBarWithNavController(this, navController)
+
+        // To display the navigation drawer
+        NavigationUI.setupWithNavController(binding.navView, navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
