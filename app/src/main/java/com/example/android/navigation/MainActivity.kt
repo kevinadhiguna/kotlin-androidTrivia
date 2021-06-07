@@ -19,21 +19,28 @@ package com.example.android.navigation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.android.navigation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    // To represent the drawer layout
+    private lateinit var drawerLayout: DrawerLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
+        // Initialize drawerLayout
+        drawerLayout = binding.drawerLayout
+
         // To find the navigation controller object
         val navController = this.findNavController(R.id.myNavHostFragment)
 
         // To link the navigation controller to the app bar
-        NavigationUI.setupActionBarWithNavController(this, navController)
+        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
 
         // To display the navigation drawer
         NavigationUI.setupWithNavController(binding.navView, navController)
@@ -42,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController =  this.findNavController(R.id.myNavHostFragment)
 
-        return navController.navigateUp()
+        // Return NavigationUI.navigateUp instead of returning navController.navigateUp
+        return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
     // TODO (01) Create the new TitleFragment
