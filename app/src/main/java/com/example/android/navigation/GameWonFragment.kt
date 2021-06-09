@@ -37,6 +37,10 @@ class GameWonFragment : Fragment() {
         binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(GameOverFragmentDirections.actionGameOverFragmentToGameFragment())
         }
+
+        // Add an options menu to the Congratulations screen
+        setHasOptionsMenu(true)
+
         return binding.root
     }
 }
