@@ -65,4 +65,5 @@ class GameWonFragment : Fragment() {
         if (getShareIntent().resolveActivity(requireActivity().packageManager) == null) {
             menu.findItem(R.id.share).isVisible = false
         }
+    }
 }
